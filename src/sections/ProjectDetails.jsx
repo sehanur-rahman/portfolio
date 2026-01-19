@@ -45,7 +45,7 @@ export default function ProjectDetail() {
           <span className="relative z-10 flex items-center gap-2 group-hover:text-black transition">
             <ArrowLeft size={14} /> Return Home
           </span>
-          <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500
+          <span className="absolute inset-0 bg-linear-to-r from-cyan-400 to-blue-500
                            translate-x-full group-hover:translate-x-0 transition-transform duration-500" />
         </Link>
 
@@ -126,7 +126,7 @@ export default function ProjectDetail() {
               {project.shortDesc}
             </p>
 
-            <div className="h-px bg-gradient-to-r from-cyan-500/50 to-transparent" />
+            <div className="h-px bg-linear-to-r from-cyan-500/50 to-transparent" />
           </section>
 
           {/* Tech Stack */}
@@ -140,7 +140,7 @@ export default function ProjectDetail() {
                 <div
                   key={i}
                   className="p-6 border border-white/10 rounded-2xl
-                             bg-white/[0.03] hover:bg-white/[0.06] transition"
+                             bg-white/3 hover:bg-white/6 transition"
                 >
                   <span className="text-xs font-mono text-zinc-500 block mb-1">
                     MOD_0{i + 1}

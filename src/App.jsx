@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Preloader from "./Components/Preloader";
 import Footer from "./Components/Footer";
-import SmoothScroll from "./Components/SmoothScroll";
+import SmoothScroll from "./components/SmoothScroll";
 import CustomCursor from "./Components/CustomCursor";
 import RGBScrollbar from "./Components/RgbScroll";
 import ScrollParallaxVideo from "./Components/ParallaxBackground";

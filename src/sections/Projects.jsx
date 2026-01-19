@@ -63,7 +63,7 @@ export default function Projects() {
             className="text-5xl md:text-7xl font-black tracking-tighter"
           >
             Selected{" "}
-            <span className="italic bg-gradient-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
+            <span className="italic bg-linear-to-r from-cyan-400 to-blue-600 bg-clip-text text-transparent">
               Projects
             </span>
           </motion.h2>
@@ -83,7 +83,7 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ ...transition, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="group relative h-[500px] rounded-[2.5rem]
+              className="group relative h-125 rounded-[2.5rem]
                          overflow-hidden bg-[#0a0a0a]
                          border border-white/5 shadow-2xl"
             >
@@ -100,7 +100,7 @@ export default function Projects() {
               />
 
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent z-10" />
+              <div className="absolute inset-0 bg-linear-to-t from-black via-black/60 to-transparent z-10" />
 
               {/* Content */}
               <div className="absolute inset-0 z-20 p-8 flex flex-col justify-end">
@@ -178,8 +178,8 @@ export default function Projects() {
       </div>
 
       {/* Background Glow */}
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/5 rounded-full blur-[120px]" />
-      <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-blue-600/5 rounded-full blur-[100px]" />
+      <div className="absolute bottom-0 right-0 w-125 h-125 bg-cyan-500/5 rounded-full blur-[120px]" />
+      <div className="absolute top-0 left-0 w-100 h-100 bg-blue-600/5 rounded-full blur-[100px]" />
     </section>
   );
 }
