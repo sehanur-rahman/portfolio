@@ -1,0 +1,100 @@
+/* Tailwind v4 */
+@import "tailwindcss";
+
+/* ================================
+   Global Base Styles
+================================ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050505; /* Neutral base, visuals handled by ParallaxBackground */
+  color: white;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Text selection */
+::selection {
+  background-color: #22d3ee;
+  color: #000;
+}
+
+/* Smooth rendering */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ================================
+   Custom Utility Classes
+================================ */
+
+/* Neon button (used optionally) */
+.neon-btn {
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.375rem;
+  border: 1px solid #22d3ee;
+  color: #22d3ee;
+  background: transparent;
+  box-shadow: 0 0 12px rgba(34, 211, 238, 0.6);
+  transition: all 0.3s ease;
+}
+
+.neon-btn:hover {
+  background-color: rgba(34, 211, 238, 0.1);
+  box-shadow: 0 0 18px rgba(34, 211, 238, 0.9);
+}
+
+/* Circular neon icon wrapper */
+.neon-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8b5cf6;
+  box-shadow: 0 0 10px rgba(139, 92, 246, 0.7);
+}
+
+/* Glowing ring effect */
+.neon-ring {
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.7);
+}
+
+/* Floating tech icons (Hero section) */
+.tech-icon {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.8));
+  pointer-events: none;
+}
+
+/* ================================
+   Scrollbar (Fallback – Lenis + RGBScrollbar handles main UI)
+================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+
+/* ================================
+   Accessibility
+================================ */
+:focus-visible {
+  outline: 2px solid #22d3ee;
+  outline-offset: 2px;
+}
