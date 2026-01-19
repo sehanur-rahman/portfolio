@@ -1,9 +1,9 @@
 import NavHero from "../sections/NavHero";
-import About from "../Sections/About";
-import Skills from "../Sections/Skills";
-import Education from "../Sections/Education";
-import Projects from "../Sections/Projects";
-import Contact from "../Sections/Contact";
+import About from "../sections/About";
+import Skills from "../sections/Skills";
+import Education from "../sections/Education";
+import Projects from "../sections/Projects";
+import Contact from "../sections/Contact";
 
 export default function Home() {
     return (
