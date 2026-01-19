@@ -187,9 +187,18 @@ export default function NavHero() {
                             <Github size={20} />
                         </a>
 
-                        <button className="bg-primary text-white font-bold border border-white/20 py-3 px-8 rounded-md hover:shadow-[0_0_25px_rgba(255,0,92,0.6)] transition-all">
-                            Download Resume
-                        </button>
+                        <a
+                            href="/resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="bg-primary text-white font-bold border border-white/20
+             py-3 px-8 rounded-md
+             hover:shadow-[0_0_25px_rgba(255,0,92,0.6)]
+             transition-all inline-flex items-center"
+                        >
+                            View Resume
+                        </a>
+
                     </div>
                 </div>
 
