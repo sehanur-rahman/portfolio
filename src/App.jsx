@@ -9,7 +9,7 @@ import RGBScrollbar from "./components/RgbScroll";
 import ScrollParallaxVideo from "./components/ParallaxBackground";
 
 const Home = lazy(() => import("./pages/Home"));
-const ProjectDetail = lazy(() => import("./sections/projectDetails"));
+const ProjectDetail = lazy(() => import("./sections/ProjectDetails"));
 
 function App() {
   const [loading, setLoading] = useState(true);
