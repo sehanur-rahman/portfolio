@@ -1,15 +1,15 @@
 import { lazy, useEffect, useState, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
-import Preloader from "./Components/Preloader";
-import Footer from "./Components/Footer";
+import Preloader from "./components/Preloader";
+import Footer from "./components/Footer";
 import SmoothScroll from "./components/SmoothScroll";
-import CustomCursor from "./Components/CustomCursor";
-import RGBScrollbar from "./Components/RgbScroll";
-import ScrollParallaxVideo from "./Components/ParallaxBackground";
+import CustomCursor from "./components/CustomCursor";
+import RGBScrollbar from "./components/RgbScroll";
+import ScrollParallaxVideo from "./components/ParallaxBackground";
 
-const Home = lazy(() => import("./Pages/Home"));
-const ProjectDetail = lazy(() => import("./Sections/projectDetails"));
+const Home = lazy(() => import("./pages/Home"));
+const ProjectDetail = lazy(() => import("./sections/projectDetails"));
 
 function App() {
   const [loading, setLoading] = useState(true);
