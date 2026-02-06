@@ -192,9 +192,9 @@ export default function NavHero() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-primary text-white font-bold border border-white/20
-             py-3 px-8 rounded-md
-             hover:shadow-[0_0_25px_rgba(255,0,92,0.6)]
-             transition-all inline-flex items-center"
+            py-3 px-8 rounded-md
+            hover:shadow-[0_0_25px_rgba(255,0,92,0.6)]
+            transition-all inline-flex items-center"
                         >
                             View Resume
                         </a>
